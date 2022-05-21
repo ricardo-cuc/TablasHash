@@ -2,25 +2,30 @@ package proyecto;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.net.InetAddress;
+import java.net.*;
 
 //import org.joda.time.format.*;
 
 public class principal {
 	public static void main (String[] args) throws Exception {
 		System.out.println("DATOS DE ESTUDIANTE");
-       
+		try {	
             System.out.println("=========================");
             System.out.println("0910-14-8526, Ricardo Humberto Cuc Salazar, C");
             System.out.println("" + InetAddress.getLocalHost());
             System.out.println("=========================");
             
-   
-      
-		HashTab PersonasLinkList = new HashTab(7);
+		} catch (UnknownHostException ex) {
+            //Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        //
+		HashTab PersonasLinkList = new HashTab(80);
 		int id=1;
 				
-			BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Ricardo\\eclipse-workspace\\tablas\\src\\proyecto\\ListaC.csv")); 
+			BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\alumno\\eclipse-workspace\\tablas\\src\\proyecto\\ListaC.csv")); 
 			String line;
+			
 			while ((line = br.readLine()) != null) { 
 			    // use comma as separator 
 			    String[] cols = line.split(";"); 

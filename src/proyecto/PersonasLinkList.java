@@ -8,13 +8,16 @@ public class PersonasLinkList {
 	    public void add(Persona persona) {
 	        if (head == null) {
 	            head = persona;
+	          
 	            return;
+	        }else {
+	        	System.out.print("*");
 	        }
 	        Persona tPersona = head;
 	        while (tPersona.next != null) {
 	            // hacia atrás
 	            tPersona = tPersona.next;
-	          
+	            
 	        }
 	        tPersona.next = persona;
 	    }
@@ -70,12 +73,15 @@ public class PersonasLinkList {
 
 	    // Colicion
 	    public void list(int no) {
+	    	 Persona tPersona = head;
 	        if (head == null) {
-	            System.out.println("Indice" + (no + 1) + " vacía");
+	            System.out.println("Indice " + (no + 1) + " vacía");
 	            return;
+	        }else {
+	        	System.out.println("Coliciones indice " + (no + 1)+" Con indice "+tPersona.id );	
 	        }
-	        System.out.println("Coliciones ocurridas en el indice " + (no + 1) );
-	        Persona tPersona = head;
+	        
+	       
 	        while (true) {
 	            System.out.println(tPersona + " --> ");
 	            if (tPersona.next == null) {

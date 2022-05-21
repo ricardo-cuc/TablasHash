@@ -24,6 +24,6 @@ public class Persona {
 	public void setedad(int edad) {this.edad=edad;}
     @Override
     public String toString() {
-        return "Persona{" + "id=" + id +", codigo='" + codigo +", nombre='" +nombre+", edad='"+edad+'\'' +'}';
+        return "Persona{" + "id=" + id +", codigo='" +"FX-" + codigo +"Y'" +", nombre='" +nombre+", edad='"+edad+'\'' +'}';
     }
 }
