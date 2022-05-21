@@ -21,7 +21,7 @@ public class HashTab {
     public void add(Persona Persona) {
 
         // Seleccione la lista vinculada según la identificación del Personaleado
-        int PersonasLinkListNO = hashFun(Integer.parseInt(Persona.getcodigo()));
+        int PersonasLinkListNO = hashFun(Persona.id);
 
         // Añadir a la lista vinculada
         PersonasLinkListArray[PersonasLinkListNO].add(Persona);

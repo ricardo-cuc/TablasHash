@@ -5,28 +5,29 @@ public class PersonasLinkList {
 	    private Persona head;
 
 	    // agregar
-	    public void add(Persona Persona) {
+	    public void add(Persona persona) {
 	        if (head == null) {
-	            head = Persona;
+	            head = persona;
 	            return;
 	        }
 	        Persona tPersona = head;
 	        while (tPersona.next != null) {
 	            // hacia atrás
 	            tPersona = tPersona.next;
+	            System.out.println("Se agrego");
 	        }
-	        tPersona.next = Persona;
+	        tPersona.next = persona;
 	    }
 	    
 	    // eliminar
-	    public void deletePersonaById(String id) {
+	    public void deletePersonaById(int id) {
 	        if (head == null) {
 	            return;
 	        }
 	        Persona tPersona = head;
 
 	        while (true) {
-	            if (tPersona.getcodigo() == id) {
+	            if (tPersona.id == id) {
 	                // eliminar
 	                head = tPersona.next;
 	                break;
@@ -36,7 +37,7 @@ public class PersonasLinkList {
 	                break;
 	            }
 
-	            if (tPersona.next.getcodigo() == id) {
+	            if (tPersona.next.id == id) {
 	                // Eliminar el nodo Persona
 	                tPersona.next = tPersona.next.next;
 	                break;
@@ -48,13 +49,13 @@ public class PersonasLinkList {
 	    }
 
 	    // Encuentra
-	    public Persona findPersonaById(String id) {
+	    public Persona findPersonaById(int id) {
 	        if (head == null) {
 	            return null;
 	        }
 	        Persona tPersona = head;
 	        while (true) {
-	            if (tPersona.getcodigo() == id) {
+	            if (tPersona.id== id) {
 	                break;
 	            }
 	            if (tPersona.next == null) {
