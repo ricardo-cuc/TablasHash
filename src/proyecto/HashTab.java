@@ -35,7 +35,9 @@ public class HashTab {
     public void list() {
         for (int i = 0; i < size; i++) {
             PersonasLinkListArray[i].list(i);
+            
         }
+        
     }
    /*
     // Eliminar información Persona de la tabla hash de acuerdo con la identificación

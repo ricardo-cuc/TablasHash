@@ -75,7 +75,7 @@ public class PersonasLinkList {
 	    public void list(int no) {
 	    	 Persona tPersona = head;
 	        if (head == null) {
-	            System.out.println("Indice " + (no + 1) + " vacía");
+	            System.out.println("Indice " + (no) + " vacía");
 	            return;
 	        }else {
 	        	System.out.println("Coliciones indice " + (no + 1)+" Con indice "+tPersona.id );	
