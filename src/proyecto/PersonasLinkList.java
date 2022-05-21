@@ -68,16 +68,16 @@ public class PersonasLinkList {
 	        return tPersona;
 	    }
 
-	    // atravesar
+	    // Colicion
 	    public void list(int no) {
 	        if (head == null) {
-	            System.out.println("Sección" + (no + 1) + "La lista vinculada está vacía");
+	            System.out.println("Indice" + (no + 1) + " vacía");
 	            return;
 	        }
-	        System.out.print("Sección" + (no + 1) + "Información de la lista vinculada para");
+	        System.out.println("Coliciones ocurridas en el indice " + (no + 1) );
 	        Persona tPersona = head;
 	        while (true) {
-	            System.out.print(tPersona + " --> ");
+	            System.out.println(tPersona + " --> ");
 	            if (tPersona.next == null) {
 	                break;
 	            }

@@ -1,13 +1,21 @@
 package proyecto;
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.net.InetAddress;
 
 //import org.joda.time.format.*;
 
 public class principal {
 	public static void main (String[] args) throws Exception {
-		System.out.println("Ricardo Humberto Cuc Salazar");
-		System.out.println("0910-14-8526");
+		System.out.println("DATOS DE ESTUDIANTE");
+       
+            System.out.println("=========================");
+            System.out.println("0910-14-8526, Ricardo Humberto Cuc Salazar, C");
+            System.out.println("" + InetAddress.getLocalHost());
+            System.out.println("=========================");
+            
+   
+      
 		HashTab PersonasLinkList = new HashTab(7);
 		int id=1;
 				
@@ -18,10 +26,9 @@ public class principal {
 			    String[] cols = line.split(";"); 
 				Persona pers = new Persona(id++,Integer.parseInt(cols[0]), cols[1], cols[2]);
 				PersonasLinkList.add(pers);
-				 System.out.println("Se agrego"+ pers);
+				 
 			} 
 			if(id>=1){
-				System.out.println("|#|     DPI     |     NOMBRE          | FECHA");
 				PersonasLinkList.list();
 			}
 			/*
