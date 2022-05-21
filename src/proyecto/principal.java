@@ -18,14 +18,13 @@ public class principal {
 			    String[] cols = line.split(";"); 
 				Persona pers = new Persona(id++,Integer.parseInt(cols[0]), cols[1], cols[2]);
 				PersonasLinkList.add(pers);
+				 System.out.println("Se agrego"+ pers);
 			} 
-			/*if(PersonasLinkList.==false){
+			if(id>=1){
 				System.out.println("|#|     DPI     |     NOMBRE          | FECHA");
-				for(int i=0; i < PersonasLinkList.contar();i++){
-					int n=i+1;
-					System.out.println("|"+n+"|"+PersonasLinkList.+"|"+PersonasLinkList.obtener(i).getnombre()+"|"+PersonasLinkList.obtener(i).getfecha());
-				}
+				PersonasLinkList.list();
 			}
+			/*
 			System.out.println("C) El primer Nodo de la PersonasLinkList..");
 			PersonasLinkList.eliminarPrincipio();
 			System.out.println("D)Insertar nodo al final de la PersonasLinkList.");

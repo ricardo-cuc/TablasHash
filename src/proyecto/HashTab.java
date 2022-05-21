@@ -30,6 +30,13 @@ public class HashTab {
     private int hashFun(int id) {
         return id % size;
     }
+    
+ // Recorrer la tabla hash
+    public void list() {
+        for (int i = 0; i < size; i++) {
+            PersonasLinkListArray[i].list(i);
+        }
+    }
    /*
     // Eliminar información Persona de la tabla hash de acuerdo con la identificación
     public void deleteById(String id) {
@@ -47,12 +54,7 @@ public class HashTab {
     }
 
 
-    // Recorrer la tabla hash
-    public void list() {
-        for (int i = 0; i < size; i++) {
-            PersonasLinkListArray[i].list(i);
-        }
-    }
+    
 
 
 

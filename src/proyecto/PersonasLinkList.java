@@ -14,7 +14,7 @@ public class PersonasLinkList {
 	        while (tPersona.next != null) {
 	            // hacia atrás
 	            tPersona = tPersona.next;
-	            System.out.println("Se agrego");
+	          
 	        }
 	        tPersona.next = persona;
 	    }

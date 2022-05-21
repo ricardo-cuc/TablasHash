@@ -12,6 +12,7 @@ public class Persona {
 		this.codigo=codigo;
 		this.nombre=nombre;
 		this.edad=edad;
+		
 	}
 	public int getid() {return id;}
 	public void setid(int id) {this.id=id;}
@@ -21,4 +22,8 @@ public class Persona {
 	public void setnombre(String nombre) {this.nombre=nombre;}
 	public int getedad() {return edad;}
 	public void setedad(int edad) {this.edad=edad;}
+    @Override
+    public String toString() {
+        return "Persona{" + "id=" + id +", codigo='" + codigo +", nombre='" +nombre+", edad='"+edad+'\'' +'}';
+    }
 }
