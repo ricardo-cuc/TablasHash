@@ -34,7 +34,7 @@ public class principal {
 				PersonasL.add(pers);
 				System.out.println("Elemento Agregado "+id); 
 			} 
-			
+			//comentario
 			/*
 			System.out.println("C) El primer Nodo de la PersonasLinkList..");
 			PersonasLinkList.eliminarPrincipio();
