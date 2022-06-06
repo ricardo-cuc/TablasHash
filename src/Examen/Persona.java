@@ -1,4 +1,4 @@
-package proyecto;
+package Examen;
 
 
 public class Persona {

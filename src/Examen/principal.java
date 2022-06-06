@@ -1,4 +1,4 @@
-package proyecto;
+package Examen;
 
 import java.net.InetAddress;
 import java.net.*;
@@ -30,7 +30,7 @@ public class principal {
 				PersonasL.add(pers);
 		
 			} 
-
+			
 			if(id>=1){
 			PersonasL.list();
 			}
