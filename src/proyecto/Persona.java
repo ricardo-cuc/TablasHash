@@ -5,13 +5,13 @@ public class Persona {
 	int id;
 	private String codigo;
 	private String nombre;
-	private int edad;
+	float  correlativo;
 	public Persona next;
-	public Persona(int id, int edad, String nombre, String codigo ) {
+	public Persona(int id, String nombre, String codigo, float correlativo ) {
 		this.id=id;
 		this.codigo=codigo;
 		this.nombre=nombre;
-		this.edad=edad;
+		this.correlativo=correlativo;
 		
 	}
 	public int getid() {return id;}
@@ -20,10 +20,10 @@ public class Persona {
 	public void setcodigo(String codigo) {this.codigo=codigo;}
 	public String getnombre() {return nombre;}
 	public void setnombre(String nombre) {this.nombre=nombre;}
-	public int getedad() {return edad;}
-	public void setedad(int edad) {this.edad=edad;}
+	public float getcorrelativo() {return correlativo;}
+	public void setcorrelativo(float correlativo) {this.correlativo=correlativo;}
     @Override
     public String toString() {
-        return "Persona{" + "id=" + id +", codigo='" +"FX-" + codigo +"Y'" +", nombre='" +nombre+", edad='"+edad+'\'' +'}';
+        return "Persona{" + "id=" + id +", codigo='" +"EMP-" + codigo +", nombre='" +nombre+", correlativo='"+correlativo+'\'' +'}';
     }
 }

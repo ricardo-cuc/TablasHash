@@ -22,28 +22,17 @@ public class principal {
         //
 		HashTab PersonasL= new HashTab(80);
 		
-		int id=1;
-				
-			BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\alumno\\eclipse-workspace\\tablas\\src\\proyecto\\ListaC.csv")); 
-			String line;
-			
-			while ((line = br.readLine()) != null) { 
-			    // use comma as separator 
-			    String[] cols = line.split(";"); 
-				Persona pers = new Persona(id++,Integer.parseInt(cols[0]), cols[1], cols[2]);
+		int id=1,i;
+		String line;
+		float salario;	
+			for(i=1;i<5;i++) { 
+			    // Usando funcion para rellenar datos en tabla hash
+				salario=(float) (i*100.01);
+				Persona pers = new Persona(id++,"Empleado "+String.format("%03d",i),String.format("%03d",i),salario);
 				PersonasL.add(pers);
-				System.out.println("Elemento Agregado "+id); 
+		
 			} 
-			//comentario
-			/*
-			System.out.println("C) El primer Nodo de la PersonasLinkList..");
-			PersonasLinkList.eliminarPrincipio();
-			System.out.println("D)Insertar nodo al final de la PersonasLinkList.");
-			Persona personaf = new Persona(Long.parseLong("2170470920101"),"Ricardo Humberto Cuc Salazar", datetimeformat.parseDateTime("20/12/1992"));
-			PersonasLinkList.insertarFinal(personaf);
-			
-			*/
-			br.close();
+
 			if(id>=1){
 			PersonasL.list();
 			}
