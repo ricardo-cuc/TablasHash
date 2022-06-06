@@ -1,6 +1,5 @@
 package proyecto;
-import java.io.BufferedReader;
-import java.io.FileReader;
+
 import java.net.InetAddress;
 import java.net.*;
 
@@ -19,11 +18,10 @@ public class principal {
             //Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        //
+        // clase donde se insertan los registros a la tabla
 		HashTab PersonasL= new HashTab(80);
 		
 		int id=1,i;
-		String line;
 		float salario;	
 			for(i=1;i<5;i++) { 
 			    // Usando funcion para rellenar datos en tabla hash

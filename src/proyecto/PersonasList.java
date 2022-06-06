@@ -1,6 +1,6 @@
 package proyecto;
 
-public class PersonasLinkList {
+public class PersonasList {
 	    // encabezado de la lista de enlaces
 	    private Persona head;
 
